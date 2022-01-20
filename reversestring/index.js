@@ -6,7 +6,9 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+function reverse(str) {
 
+}
 
 reverse('hola');
 
