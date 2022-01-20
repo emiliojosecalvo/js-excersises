@@ -10,9 +10,20 @@ function reverse(str) {
 
 }
 
+
 reverse('hola');
 
 module.exports = reverse;
+
+//Second Solution
+// function reverse(str) {
+//     let reverse = '';
+
+//     for (let character of str) {
+//         reverse = character + reverse;
+//     }
+//     return reverse;
+// }
 
 //First Solution
 // function reverse(str) {
