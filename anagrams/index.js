@@ -20,7 +20,33 @@ function cleanString(str) {
         .sort()//organize this strings in alphabetical or numerical order
         .join('');//Joing all the substrings as a single string
 }
+function sum(nums, target) {
+    let res = [];
+    for (let i = 0; i < nums.length; i++) {
+        for (let x = 0; x < nums.length; x++) {
+            if (nums[i] + nums[x] === target) {
+                res.push(i, x)
+                return res;
+            }
+        }
+    }
+}
 
+sum([2, 7, 11, 15], 9)
+sum([3, 2, 4], 6)
+
+function twoSum(arr, target) {
+    for (let i = 0, j = arr.length - 1; i < j;) {
+        let sum = arr[i] + arr[j];
+        if (sum === target) {
+            return [i, j];
+        } else if (sum < target) {
+            i++;
+        } else {
+            j--;
+        }
+    }
+};
 
 module.exports = anagrams;
 
