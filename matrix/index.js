@@ -60,7 +60,7 @@ function matrix(n) {
         startCol++;
     }
 
-    console.log(result.length)
+    return result;
 }
 
 matrix(4)
